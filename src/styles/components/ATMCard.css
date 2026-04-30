@@ -1,0 +1,63 @@
+.atm-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-left: 3px solid transparent;
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: border-left-color 0.2s, box-shadow 0.2s, transform 0.18s;
+  animation: cardIn 0.32s ease both;
+  position: relative;
+}
+
+.atm-card:hover {
+  border-left-color: var(--navy);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.atm-card__icon {
+  width: 40px; height: 40px;
+  background: var(--navy-light);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--navy); flex-shrink: 0;
+}
+
+.atm-card__body { flex: 1; min-width: 0; }
+
+.atm-card__name {
+  font-size: 0.9rem; font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.atm-card__address {
+  font-size: 0.8rem; color: var(--text-secondary);
+  display: flex; align-items: flex-start; gap: 5px;
+  line-height: 1.45; margin-bottom: 6px;
+}
+.atm-card__address svg { color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+
+.atm-card__horario {
+  font-size: 0.74rem; color: var(--text-muted);
+  display: flex; align-items: flex-start; gap: 5px;
+  line-height: 1.4;
+}
+.atm-card__horario svg { flex-shrink: 0; margin-top: 2px; }
+
+.atm-card__badge {
+  position: absolute; top: 14px; right: 14px;
+  font-size: 0.62rem; font-weight: 800;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--navy); background: var(--navy-light);
+  border-radius: 4px; padding: 2px 7px;
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

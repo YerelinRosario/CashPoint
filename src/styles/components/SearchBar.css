@@ -1,0 +1,14 @@
+.search-bar { position: relative; display: flex; align-items: center; flex: 1; max-width: 480px; }
+.search-bar__icon { position: absolute; left: 13px; color: var(--text-muted); pointer-events: none; transition: color 0.2s; }
+.search-bar__input {
+  width: 100%; background: var(--bg);
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 10px 36px; font-family: var(--font); font-size: 0.88rem;
+  color: var(--text-primary); outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.search-bar__input::placeholder { color: var(--text-muted); }
+.search-bar__input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-dim); background: var(--bg-white); }
+.search-bar:focus-within .search-bar__icon { color: var(--accent); }
+.search-bar__clear { position: absolute; right: 10px; background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 0.78rem; padding: 4px 6px; border-radius: 4px; transition: color 0.2s, background 0.2s; }
+.search-bar__clear:hover { color: var(--navy); background: var(--navy-light); }
