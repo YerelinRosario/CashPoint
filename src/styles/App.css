@@ -83,12 +83,22 @@
 /* ── Responsive ───────────────────────────── */
 @media (max-width: 768px) {
   .topbar { display: none; }
-  .header__inner, .hero__inner, .main__inner, .footer__inner { padding: 0 20px; }
+  .header__inner, .hero__inner, .main__inner, .footer__inner { padding: 0 16px; }
   .hero__stats { display: none; }
-  .hero { padding: 40px 0; }
-  .toolbar { flex-direction: column; align-items: stretch; gap: 10px; }
-  .atm-grid { grid-template-columns: 1fr; }
-  .footer__inner { flex-direction: column; text-align: center; }
+  .hero { padding: 36px 0; }
+  .hero__title { font-size: 1.8rem; }
+  .toolbar { flex-direction: column; align-items: stretch; gap: 8px; padding: 14px 16px; }
+  .toolbar__count { font-size: 0.78rem; }
+  .search-bar { max-width: 100%; }
+  .atm-grid { grid-template-columns: 1fr; gap: 10px; }
+  .footer__inner { flex-direction: column; text-align: center; gap: 8px; }
+  .main { padding: 20px 0 60px; }
+}
+
+@media (max-width: 380px) {
+  .header__logo-sub { display: none; }
+  .header__status span { display: none; }
+  .hero__title { font-size: 1.5rem; }
 }
 
 /* ── Demo banner ──────────────────────────── */
