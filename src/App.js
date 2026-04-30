@@ -4,8 +4,7 @@ import { mockATMs } from './mockData';
 import ATMCard from './components/ATMCard';
 import SearchBar from './components/SearchBar';
 import Pagination from './components/Pagination';
-import '../styles/App.css';
-
+import './styles/App.css';
 
 // ⚠️ Cambia a false cuando el rate limit se resetee
 const USE_MOCK = true;
