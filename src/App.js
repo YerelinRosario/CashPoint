@@ -88,9 +88,9 @@ export default function App() {
           <div className="header__right">
             <div className="header__status">
               <span className="header__status-dot" />
-              {/* <span>{USE_MOCK ? 'Modo Demo' : 'API Activa'}</span> */}
+              <span>API Activa</span>
             </div>
-            <span className="header__pill">{USE_MOCK ? 'Demo' : 'Sandbox'}</span>
+            <span className="header__pill">Sandbox</span>
           </div>
         </div>
       </header>
